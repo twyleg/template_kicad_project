@@ -110,7 +110,7 @@
 
   (footprint "twyleg-voltage-regulators:Polulu-S13V30F5" (layer "F.Cu")
     (tstamp 5ef129a7-1d9c-4da5-bd5f-c2d125b377da)
-    (at 115.645 87.555)
+    (at 115.899 87.555)
     (property "Sheetfile" "template_project_kicad.kicad_sch")
     (property "Sheetname" "")
     (path "/ff2b45ba-5905-4c45-8747-7cf2078d6386")
