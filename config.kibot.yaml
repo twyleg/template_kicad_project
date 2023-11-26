@@ -94,9 +94,8 @@ outputs:
     type: pcbdraw
     dir: export/pcb
     options:
-      layers: [ F.Cu, F.Silkscreen, Edge.Cuts ]
-      format: svg
-      # dpi: 300
+      format: png
+      dpi: 300
 
   - name: board_top_filled
     comment: "Top layer view with components"
@@ -104,7 +103,7 @@ outputs:
     dir: export/pcb
     output_id: '-filled'
     options:
-      format: jpg
+      format: png
       dpi: 300
       show_components: all
 
@@ -113,7 +112,7 @@ outputs:
     type: pcbdraw
     dir: export/pcb
     options:
-      format: jpg
+      format: png
       dpi: 300
       bottom: true
 
@@ -123,17 +122,17 @@ outputs:
     dir: export/pcb
     output_id: '-filled'
     options:
-      format: jpg
+      format: png
       dpi: 300
       bottom: true
       show_components: all
       
-  - name: 3D_step
+  - name: 3d_step
     comment: "STEP 3D model"
     type: step
     dir: export/3d
 
-  - name: 3D_top_view
+  - name: 3d_top_view
     comment: "3D render from top"
     type: render_3d
     dir: export/3d
@@ -143,7 +142,7 @@ outputs:
       rotate_z: 3
       ray_tracing: true
 
-  - name: 3D_top_view_HQ
+  - name: 3d_top_view_hq
     comment: "3D render from top (High Quality)"
     type: blender_export
     dir: export/3d
@@ -155,5 +154,5 @@ outputs:
         rotate_x: 30
         rotate_z: -20
       outputs:
-        - type: blender
+        # - type: blender
         - type: render

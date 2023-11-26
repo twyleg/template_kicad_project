@@ -21,21 +21,11 @@ jobs:
     - uses: actions/checkout@v2
       with:
         submodules: 'true'
+    - name: Clean exports
+      run: rm -r ./export/
     - uses: INTI-CMNB/KiBot@v2_k7
       with:
-        # Required - kibot config file
         config: config.kibot.yaml
-        # # optional - prefix to output defined in config
-        # dir: output
-        # # optional - schematic file
-        # schema: 'schematic.sch'
-        # # optional - PCB design file
-        # board: 'pcb.kicad_pcb'
-    - name: upload results
-      uses: actions/upload-artifact@v2
-      with:
-        name: export
-        path: export
     - name: Commit results
       run: |
             git config --global user.name 'Torsten Wylegala'
