@@ -19,6 +19,8 @@ jobs:
       contents: write
     steps:
     - uses: actions/checkout@v2
+      with:
+        submodules: 'true'
     - uses: INTI-CMNB/KiBot@v2_k7
       with:
         # Required - kibot config file
@@ -38,5 +40,6 @@ jobs:
       run: |
             git config --global user.name 'Torsten Wylegala'
             git config --global user.email 'twyleg@users.noreply.github.com'
-            git commit -am "Generated exports"
+            git add export/
+            git commit -m "Generated exports"
             git push
