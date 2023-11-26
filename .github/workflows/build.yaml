@@ -6,11 +6,13 @@ on:
     - '**.kicad_sch'
     - '**.kicad_pcb'
     - '.github/workflows/build.yaml'
+    - 'config.kibot.yaml'
   pull_request:
     paths:
       - '**.kicad_sch'
       - '**.kicad_pcb'
       - '.github/workflows/build.yaml'
+      - 'config.kibot.yaml'
 
 jobs:
   example:
