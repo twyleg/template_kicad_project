@@ -35,8 +35,8 @@ jobs:
         name: export
         path: export
     - name: Commit results
-        run: |
-          git config --global user.name 'Torsten Wylegala'
-          git config --global user.email 'twyleg@users.noreply.github.com'
-          git commit -am "Generated exports"
-          git push
+      run: |
+            git config --global user.name 'Torsten Wylegala'
+            git config --global user.email 'twyleg@users.noreply.github.com'
+            git commit -am "Generated exports"
+            git push
