@@ -156,4 +156,5 @@ outputs:
         rotate_z: -20
       outputs:
         # - type: blender
-        - type: render
+        type: render
+        output: '%i.%x'
