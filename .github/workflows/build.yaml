@@ -29,6 +29,7 @@ jobs:
     - name: Update github page
       run: |
             rm -rf ./docs/*
+            mkdir -p ./docs/
             cp -r export/bom/template_project_kicad-ibom.html ./docs/index.html
     - name: Commit results
       run: |
