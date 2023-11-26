@@ -2,6 +2,7 @@ kibot:
   version: 1
 
 globals:
+  output: '%i.%x'
   # Filters for KiBot warnings
   filters:
     - filter: Ignore PcbDraw missing components
