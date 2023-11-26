@@ -5,17 +5,19 @@ on:
     paths:
     - '**.kicad_sch'
     - '**.kicad_pcb'
+    - '.github/workflows/build.yaml'
   pull_request:
     paths:
       - '**.kicad_sch'
       - '**.kicad_pcb'
+      - '.github/workflows/build.yaml'
 
 jobs:
   example:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: INTI-CMNB/KiBot@v2k7
+    - uses: INTI-CMNB/KiBot@v2_k7
       with:
         # Required - kibot config file
         config: config.kibot.yaml
