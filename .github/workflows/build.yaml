@@ -27,7 +27,7 @@ jobs:
       run: rm -r ./export/
     - uses: INTI-CMNB/KiBot@v2_k7
       with:
-        config: config.kibot.yaml
+        config: external/twyleg_kicad_utils/kibot/default.kibot.yaml
     - name: Update github page
       run: |
             rm -rf ./docs/*
