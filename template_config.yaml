@@ -1,0 +1,26 @@
+placeholder: template_project_kicad
+
+update_files:
+  - README.md
+  - template_project_kicad.kicad_pcb
+  - template_project_kicad.kicad_prl
+  - template_project_kicad.kicad_pro
+  - template_project_kicad.kicad_sch
+
+rename_files:
+  - template_project_kicad.kicad_pcb
+  - template_project_kicad.kicad_prl
+  - template_project_kicad.kicad_pro
+  - template_project_kicad.kicad_sch
+
+rename_dirs:
+
+remove_files:
+  - template_config.yaml
+  - docs/index.html
+
+remove_dirs:
+  - export/3d
+  - export/bom
+  - export/pcb
+  - export/sch
