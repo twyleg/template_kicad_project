@@ -2,4 +2,6 @@
 *-backups/
 \#auto_saved_files\#
 
+venv/
+
 .kiri/
