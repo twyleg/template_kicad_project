@@ -23,8 +23,6 @@ jobs:
     - uses: actions/checkout@v2
       with:
         submodules: 'true'
-    - name: Clean exports
-      run: rm -r ./export/
     - uses: INTI-CMNB/KiBot@v2_k7
       with:
         config: default.kibot.yaml
