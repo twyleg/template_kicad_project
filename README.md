@@ -1,6 +1,8 @@
 # template_project_kicad
 
-![Alt text](export/3d/3D_blender_top.png "a title")
+https://twyleg.github.io/template_project_kicad
+
+![Alt text](docs/3d/3D_blender_top.png "a title")
 
 
 ## Init template
@@ -11,8 +13,6 @@ https://github.com/twyleg/template_project_utils
 
 Run the following commands to initialize the project:
 
-    python -m venv venv
-    source venv/bin/activate
-    pip install -r requirements.txt
+    source init.bash
 
     template_projects_utils <NAME_OF_PROJECT>
