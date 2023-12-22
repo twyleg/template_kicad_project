@@ -173,5 +173,6 @@ outputs:
     comment: "Cretate navigation page for results"
     type: navigate_results
     dir: html
-
+    options:
+      link_from_root: index.html
 
