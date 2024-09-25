@@ -20,7 +20,7 @@ remove_files:
   - docs/index.html
 
 remove_dirs:
-  - export/3d
-  - export/bom
-  - export/pcb
-  - export/sch
+  - docs/3d
+  - docs/bom
+  - docs/pcb
+  - docs/sch
