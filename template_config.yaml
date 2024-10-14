@@ -19,6 +19,7 @@ rename_dirs:
 remove_files:
   - template_config.yaml
   - docs/index.html
+  - .github/workflows/test_template_initializer.yaml
 
 remove_dirs:
   - docs/3d
